@@ -1,0 +1,13 @@
+<p>{{ nameComponent }}</p>
+
+<h3 [style.background]="color" *ngIf="!showRetro">
+  The best game is: {{ bestGame }}
+</h3>
+
+<h3 [style.background]="'red'" *ngIf="showRetro">
+  The best retro game is: {{ bestRetroGame }}
+</h3>
+
+<ul>
+  <li *ngFor="let game of listVideogames">{{ game }}</li>
+</ul>
